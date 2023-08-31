@@ -32,6 +32,7 @@ li {
 
 img {
     opacity: 0.8;
+    border: #2d6a4f 3px solid;
 }
 
 /* Adds hover box-shadow to all list elements including header and contact info */
@@ -124,7 +125,6 @@ img:hover {
 /* Large displayed project */
 .project-showcase {
     grid-area: project-showcase;
-    border: #2d6a4f 3px solid;
 }
 
 .project-showcase img {
@@ -145,10 +145,6 @@ img:hover {
 }
 
 /* Smaller displayed projects */ 
-.small-grid-styling {
-    border: #2d6a4f 3px solid;
-}
-
 .small-grid-styling img {
     width: 100%;
     height: 144px;
