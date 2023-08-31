@@ -1,0 +1,234 @@
+/* Universal selector */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Element selectors */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#2d6a4f;
+}
+
+ h1 {
+    font-size: 50px;
+}
+
+h3 {
+    color: #212529;
+}
+
+a {
+    text-decoration: none;
+    color:#2d6a4f;
+}
+
+li {
+    font-size: 30px;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+img {
+    opacity: 0.8;
+}
+
+/* Adds hover box-shadow to all list elements including header and contact info */
+li:hover {
+    box-shadow: 5px 5px 20px black;
+}
+
+/* Adds opaque transition to img elements */
+img:hover {
+    opacity: 1;
+    transition: 0.5s ease;
+} 
+
+/* Class selectors */
+/* Header section */
+.header-container {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+}
+
+.header-container h1 {
+    font-size: 45px;
+    color: #212529;
+}
+
+.header-left {
+    padding: 0px 15px 0px 50px;
+    background-color: #2d6a4f;
+}
+
+/* Hero section */
+.hero {
+    height: 300px;
+    margin-bottom: 25px;
+    background-image: url("../images/green-hero-image.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Main container for all sections after hero */
+.main-container {
+    margin: 0px 50px 25px 50px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.titles {
+    margin-bottom: 25px;
+    padding-right: 25px;
+    border-right: #2d6a4f 5px solid;
+    text-align: right;
+}
+
+.paragraph-container {
+    padding: 0px 10% 0px 20px;
+    line-height: 200%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2d6a4f;
+}
+
+.paragraph {
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    float: left;
+    opacity: 1;
+}
+
+/* Separate display grid for projects */
+.projects {
+    padding: 0px 10% 0px 20px;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-rows: 300px 150px 150px;
+    gap: 25px;
+    grid-template-areas: 
+        "project-showcase project-showcase" 
+        "project-1 project-2" 
+        "project-3 project-4";
+}
+
+/* Large displayed project */
+.project-showcase {
+    grid-area: project-showcase;
+    border: #2d6a4f 3px solid;
+}
+
+.project-showcase img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Captions for all projects */
+.caption { 
+    padding: 10px 10px;
+    bottom: 90px;
+    display: inline-block;
+    position: relative;
+    color: #212529;
+    background-color: #2d6a4f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Smaller displayed projects */ 
+.small-grid-styling {
+    border: #2d6a4f 3px solid;
+}
+
+.small-grid-styling img {
+    width: 100%;
+    height: 144px;
+    object-fit: cover;
+}
+
+/* Contact info section */
+.contact-me-info {
+    padding: 0px 10% 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #588157;
+}
+
+/* Media queries section */
+@media screen and (max-width: 1110px) {
+    .header-container {
+        padding: 50px 0px 0px 0px;
+        flex-direction: column;
+    }
+
+    .header-left {
+        margin-bottom: 25px;
+    }
+
+    .header-right, ul {
+        width: 100%;
+    }
+
+    .header-right li {
+        font-size: 30px;
+        padding: 10px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        border-top: #2d6a4f 1px solid;
+    }
+
+    .hero {
+        height: 150px;
+    }
+
+    .main-container {
+        grid-template-columns: 100%;
+    }
+
+    .titles {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        border-right: 0px;
+        border-bottom: #2d6a4f 5px solid;
+    }
+
+    .paragraph-container, .projects, .contact-me-info{
+        padding: 0px;
+    }
+
+    .paragraph, .caption {
+        font-size: smaller;
+    }
+
+    /* Sets up project display grid as 5 even sized stacked rows */
+    .projects {
+        grid-template-rows: 150px 150px 150px 150px 150px;
+        grid-template-areas: 
+        "project-showcase" 
+        "project-1"
+        "project-2" 
+        "project-3" 
+        "project-4";
+    }
+    
+    .contact-me-info li {
+        padding: 10px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
