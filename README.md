@@ -12,25 +12,25 @@ My biggest challenge was using the grid layout, and how that affects image place
 
 ### Desktop View
 
-![Top Section](images/desktop-screenshot-top.png)
+![Top Section](assets/images/desktop-screenshot-top.png)
 
-![Bottom Section](images/desktop-screenshot-bottom.png)
+![Bottom Section](assets/images/desktop-screenshot-bottom.png)
 
 ### Mobile View (Max-Width: 1110px)
 
-![Top Section](images/mobile-screenshot-top.png)
+![Top Section](assets/images/mobile-screenshot-top.png)
 
-![Middle Section](images/mobile-screenshot-middle.png)
+![Middle Section](assets/images/mobile-screenshot-middle.png)
 
-![Bottom Section](images/mobile-screenshot-bottom.png)
+![Bottom Section](assets/images/mobile-screenshot-bottom.png)
 
 ### Example Desktop View
 
-![Top Section](images/example-screenshot-1.png)
+![Top Section](assets/images/example-screenshot-1.png)
 
-![Middle Section](images/example-screenshot-2.png)
+![Middle Section](assets/images/example-screenshot-2.png)
 
-![Bottom Section](images/example-screenshot-3.png)
+![Bottom Section](assets/images/example-screenshot-3.png)
 
 ## License
 
